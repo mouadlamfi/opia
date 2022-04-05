@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opia Psikoloji Merkezi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="shortcut icon" href="assets/images/logo.png">
+    <script src="js/responsive-nav.js"></script>
+    <!-- Bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+            font-size: 110%;
+            line-height: 1.6em;
+            color: #424753;
+            height: 100vh;
+            z-index: 1;
+        }
+        
+        #myBtn {
+            display: none;
+            position: fixed;
+            width: 80PX;
+            height: 80PX;
+            bottom: 25px;
+            right: 15px;
+            z-index: 100;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgba(198, 198, 200, 0);
+            color: rgba(255, 255, 255, 0);
+            cursor: pointer;
+            padding: 1px;
+            border-radius: 50px;
+        }
+        
+        #myBtn:hover {
+            background-color: #555;
+        }
+        
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            LEFT: 25px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+        
+        .my-float {
+            margin-top: 16px;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+</head>
+
+<body>
+
+    <!--    HEADER-->
+
+    <header>
+
+        <div>
+
+            <a href="index.html" class="logo" data-scroll><img src="logoM.png" style="height:50px; padding-top: 2px;"></a>
+            <nav class="nav-collapse">
+                <ul>
+                    <li class="menu-item active"><a href="index.html" data-scroll>Ana Sayfa</a></li>
+                    <li class="menu-item"><a href="#about-feature" data-scroll>Hakkımızda</a></li>
+                    <li class="menu-item"><a href="#services" data-scroll>Hizmetler</a></li>
+                    <li class="menu-item"><a href="#blog" data-scroll>Duyurular ve Güncel Yazılar</a></li>
+                    <li class="menu-item"><a href="#contact" data-scroll>Bize Ulaşın</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <br>
+        <br>
+        <br>
+        <span style="nav-down: auto;">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <h2 class="section-title" style="color: #555 ;font-size:x-large; font-family:Cochin;"><span>OPİA
+                    PSİKOLOJİ MERKEZİ</span></h2>
+        <img src="img/baş.logo.2.png" style="width: 30%; display: block; margin: auto;"> <br><br>
+        <h2 class="section-title" style="font-family: Cochin; font-size: medium; color: rgb(66, 66, 66);"><span>DANIŞMANLIK & ATÖLYE</span></h2>
+        </span>
+    </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+
+
+    <!--    MAIN-->
+
+    <main>
+
+        <button onclick="topFunction()" id="myBtn" title="Başa dön"> <img src="img/scroll.png"> </button>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://wa.me/+905524787431" class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+
+        <!--        GENERAL INFORMATION-->
+
+
+        <!--        FEATURES-->
+
+
+
+        <div class="wrapper">
+
+            <section id="section-features" class="clearfix">
+
+
+
+                <section id="about-feature" class="hakkımızda"> <br>
+                    <img src="img/icon1.png" style="width: 100px;">
+                    <h4 style="font-family: Cochin; font-size: x-large;">HAKKIMIZDA</h4>
+                    <p style="text-align:center; font-family: Cochin;">Opia Psikoloji Merkezi Ege Üniversitesi Psikoloji Bölümünden mezun Psikolog kadrosuyla ruh sağlığı alanında hizmet vermekte olan bir kurumdur. Kurumumuzun amacı danışanlarımızın iyi oluş haline katkı sağlamaktır. Opia Psikoloji Merkezi,
+                        bünyesinde barındırdığı uzmanlar aracılığıyla bu hizmeti verirken gizlilik ve mahremiyet ilkelerine önem vermektedir.</p>
+                </section>
+
+                <!--  about  -->
+
+                <section id="training" class="egitim"> <br>
+                    <img src="img/icon2.png" style="width: 100px;">
+                    <h4 style="font-family: Cochin; font-size: x-large;">ATÖLYELER</h4>
+                    <p style="text-align:center; font-family: Cochin;">Opia Psikoloji Merkezi bünyesinde psikologlar aracılığıyla duygu farkındalığı, dikkat geliştirme, kaygı gibi pek çok farklı konunun ele alındığı atölyeler çocuk ve ergenlerin gelişimlerine katkı sunarken yetişkinler için de bir keşif
+                        yolculuğu imkanı sunmaktadır. Bu atölyeler oluşturulurken sanat terapisine sıkça yer verilmekte, böylece bireyler fiziksel ve zihinsel bir rahatlama yaşarken stres ve problemle baş etme becerilerini de geliştirmektedir.</p>
+                </section>
+                <!--  training  -->
+
+                <section id="specialities" class="etik"> <br>
+                    <img src="img/icon3.png" style="width: 100px;">
+                    <h4 style="font-family: Cochin; font-size: x-large;">ETİK SORUMLULUK</h4>
+                    <p style="text-align: center; font-family: Cochin;"> Yaptığımız işin öneminin ve sorumluluğunun farkında bir kurum olarak, bu işi yaparken bütün canlıların varoluş biçimlerine ve haklarına saygı duymak en temel etik ilkemizdir. </p><br><br><br><br><br>
+                </section>
+
+                <!--  Specialities  -->
+
+            </section>
+
+        </div>
+        <section style="height: 3px; background-color: gray;">
+
+        </section>
+        <section id="about" style="background-color: white;">
+
+            <div class="wrapper">
+
+
+                <img class="kabulfoto" src="IMG/HAND.png" style="width: 40%">
+                <p class="kabul" style="font-family:Cochin">"Kabul etmedikçe hiçbir şeyi değiştiremeyiz."
+                    <BR> Carl Gustav Jung
+                </p> <br>
+
+            </div>
+            <section style="height: 3px; background-color: gray;">
+            </section>
+
+            <!--        SERVICES-->
+
+            <section id="services">
+
+                <div class="wrapper">
+
+                    <h2 class="section-title" style="font-family: Cochin;"><span>HİZMETLER</span></h2>
+                    <p class="typographic-measure" style="text-align: justify; font-family: Cochin;">Merkezimizde çocuk, ergen ve yetişkinlere hizmet veren çalışma arkadaşlarımız bulunmaktadır. Bu kapsamda yaş fark etmeksizin merkezimize başvurabilirsiniz. Yüz yüze danışmanlık alma imkanı olmayan danışanlarımız online olarak danışmanlık
+                        alabilirler.
+                    </p>
+
+                    <div class="row section featured topspace">
+
+
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <a href="hizmetler1.html"><img src="assets/images/1.jpeg"></a>
+                                <BR>
+                                <BR>
+                                <p class="text-center"><a href="hizmetler1.html" class="btn btn-action">daha fazla</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a href="hizmetler2.html"><img src="assets/images/2.jpeg"></a>
+                                <BR>
+                                <BR>
+                                <p class="text-center"><a href="hizmetler2.html" class="btn btn-action">daha fazla</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a href="hizmetler3.html"><img src="assets/images/3.jpeg"></a>
+                                <BR>
+                                <BR>
+                                <p class="text-center"><a href="hizmetler3.html" class="btn btn-action">daha fazla</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a href="hizmetler4.html"><img src="assets/images/Adsız (322 × 189 piksel).png"></a>
+                                <BR>
+                                <BR>
+                                <p class="text-center"><a href="hizmetler4.html" class="btn btn-action">daha fazla</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="big-inverse">
+
+                        <div id="inverse-specialities" class="clearfix">
+                            <figure>
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <img class="scaled" src="img/oda.jpg">
+                                <figcaption></figcaption>
+                            </figure>
+                            <div class="caption" style="color: white; font-family: Cochin;">
+                                <p style="color: white; font-family: Cochin;"> "Ne Zaman Psikoloğa Gitmeliyim?" <br><br>-İnsanlar için bu sorunun cevabı oldukça değişkendir. Psikoloğa gitmek için çok büyük ya da çok küçük olarak tanımladığınız sorunlarınız olabilir. Yaşadığınız problem sizi rahatsız
+                                    edici boyuttaysa, günlük hayatınızda (okul, iş, sosyal çevre gibi alanlarda) işlevselliğinizi düşürmeye başladıysa terapi desteğine ihtiyacınız olduğu söylenebilir. Burada dikkat edilmesi gereken nokta böyle bir ihtiyaç
+                                    hissedip hissetmediğimizdir. Ancak bilişsel gelişimin tamamlanmadığı yaşlarda ve bazı psikolojik rahatsızlıklarda bireylerin ihtiyaçlarını ifade edemeyebildiğini de unutmamak gerekir.</p>
+                            </div>
+                            <!--  figure caption  -->
+                        </div>
+                        <!-- specialities row  -->
+
+                        <div id="inverse-patients" class="clearfix">
+                            <figure>
+                                <img class="scaled" src="img/WhatsApp Image 2022-03-31 at 14.27.47 (5).jpeg">
+                                <figcaption></figcaption>
+                            </figure>
+                            <div class="caption" style="font-family: Cochin;">
+                                <p> Merkezimizde uygulanmakta olan çocuk, ergen ve yetişkinlere yönelik Değerlendirme Testlerinden bazıları:
+                                    <br><br> -Ankara Gelişim Envanteri <br> -Metropolitan Okul Olgunluğu Testi <br> -Frostig Gelişimsel/Görsel Algı Testi <br> -Beier Cümle Tamamlama Testi <br> -D2 Dikkat Testi <br> -Burdon Dikkat Testi <br> -Sınav Kaygısı
+                                    Ölçeği
+                                    <br> -Beck Depresyon Ölçeği <br> -Minnesota Çok Yönlü Kişilik Envanteri (MMPI)</p>
+                            </div>
+                            <!--  figure caption  -->
+                        </div>
+                        <!-- who i see row  -->
+                    </div>
+                    <br> <br>
+                    <section class="nezaman" style=" background-color: rgba(161, 175, 192, 0.411) ; border: 1px solid gray;">
+                        <br>
+                        <i class="typographic-measure" style="text-align:center; color: black; right: 20px; right: 20px; font-family: Cochin;"> "İyileşmenin ilk şartlarından birisi de; kişinin şaşırarak kendi bilmediği yönlerini tanımasıdır."<br> Erich Fromm <br>
+                    <br></i>
+                    </section>
+                    <!-- / section -->
+                    <div style=" text-align:center;display:inline;" id="blog" class="row section recentworks topspace">
+                        <br>
+                        <h2 class="section-title" style="font-size:x-large; font-family: Cochin;"><span>Duyurular ve Güncel Yazılar</span></h2>
+                        <br>
+                        <div class="thumbnails recentworks row">
+
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <a class="thumbnail" href="sidebar-right1.html">
+                                    <span class="img">
+                                        <img src="img/giriş...jpg" alt="">
+                                        <span class="cover"><span class="more">daha fazla &rarr;</span></span>
+                                    </span>
+                                    <span class="title" style="font-family:Cochin;">PSİKOLOJİ NEDİR?<br><br></span>
+                                </a>
+
+                                <h4></h4>
+                                <p></p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <a class="thumbnail" href="sidebar-right2.html">
+                                    <span class="img">
+                                        <img src="img/giriş...jpg" alt="">
+                                        <span class="cover"><span class="more">daha fazla &rarr;</span></span>
+                                    </span>
+                                    <span class="title" style="font-family: Cochin;"> OPİA PSİKOLOJİ AÇILDI!<br><br></span>
+                                </a>
+
+                                <h4></h4>
+                                <p></p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <a class="thumbnail" href="sidebar-right3.html">
+                                    <span class="img">
+                                        <img src="img/giriş...jpg" alt="">
+                                        <span class="cover"><span class="more">daha fazla &rarr;</span></span>
+                                    </span>
+                                    <span class="title" style="font-family:cochin;"> ANORMAL PSİKOLOJİ NEDİR? <br><br></span>
+                                </a>
+
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <!-- /section -->
+                        <br>
+                        <section style="height: 3px; background-color: gray;"></section>
+                        <br><br>
+                        <section class="nezaman" style=" background-color: rgba(161, 175, 192, 0.411) ; border: 1px solid gray;"> <br>
+                            <h4 class="nezaman" style="font-family: Cochin;">Online Terapi Nedir?</h4>
+                            <p class="typographic-measure" style="text-align:center; color: black; right: 20px; right: 20px; font-family: Cochin;"> Online terapi çeşitli nedenlerle yüzyüze hizmet alamayan birçok kişi için son zamanlarda sıkça tercih edilen bir model haline gelmiştir. Bu nedenlerden bazıları; sosyal fobi, bedensel bir kısıtlama, çok sık seyahat etme, yaşanılan
+                                yerde terapi hizmetine ulaşamama, yoğun iş temposu, farklı bir ülkede yaşayan bireyler için anadilde danışmanlık alma şeklinde sıralanabilir. Online psikolojik danışmanlık sürecinde de yüzyüze yürütülen süreçte olduğu gibi
+                                etik ve gizlilik ilkelerine önem verilmektedir. Seanslarda ses ve görüntü kaydı alınmamaktadır. Biz de Opia Psikoloji Merkezi olarak, İzmir Göztepe’de yüzyüze danışmanlık hizmeti verdiğimiz gibi online danışmanlık hizmeti
+                                de sağlamaktayız. Online danışmanlıkla ilgili ayrıntılı bilgi almak için bize ulaşabilirsiniz.
+                                <br>
+                            </p>
+                        </section>
+                        <img src="img/hizmetler/online.terapi.png" alt="">
+                        <br>
+                        <ul id="services-list" class="etiket" style="font-family: Cochin;">
+                            <li>Online Danışmanlık</li>
+                            <li>Depresyon</li>
+                            <li>Kaygı Bozukluğu</li>
+                            <li>Bipolar Bozukluk</li>
+                            <li>Boşanma</li>
+                            <li>İlişki Sorunları</li>
+                            <li>Yetişkinler ve Çocuklar İçin DEHB Yönetimi</li>
+                            <li>Kayıp ve Yas</li>
+                            <li>Sağlık Psikolojisi</li>
+                            <li>Bağımlılık</li>
+                            <LI>Cinsel Yönelim ve Cinsiyet Kimliğiyle İlişkili Sorunlar</LI>
+                            <li>Doğum Süreci</li>
+                            <li>Oyun Terapisi</li>
+                        </ul>
+                    </div>
+
+
+
+                    <!-- wrapper  -->
+
+            </section>
+
+            <!--        CONTACT-->
+
+            <section id="contact" class="clearfix">
+
+                <div class="wrapper">
+
+                    <h2 style="font-family: Cochin; color: #555;">
+                        İLETİŞİM</h2>
+                    <figure id="map">
+                        <span class="fa fa-map-marker fa-2x" aria-hidden="true"></span>
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563.4043483274143!2d27.09720113955608!3d38.39967209594225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbdf4a4ebf3331%3A0x40fe69e015c7041b!2sOpia%20Psikoloji!5e0!3m2!1sen!2str!4v1645127094988!5m2!1sen!2str"
+                            width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </figure>
+                    <br>
+                    <br>
+                    <ul class="contact-info" style="font-family: Cochin; text-align:start;">
+                        <li><strong>Telefon:</strong> <a href="tel:05524787431">0 (552) 478 74 31</a></li><br>
+                        <li><strong>E-mail:</strong> <a href="mailto:opiapsikolojimerkezi@gmail.com">opiapsikolojimerkezi@gmail.com</a></li><br>
+                        <li><strong>Adres: </strong> İnönü Cd. No: 390 Büyükseyran Apt.<br> Kat:5/56 Göztepe/İzmir </li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <a href="mailto:opiapsikolojimerkezi@gmail.com"><img src="img/mail.icon.png" style="width: 7.6%"></a>
+            <a href="http://Instagram.com/opiapsikoloji"><img src="img/instagram.icon.png" style="width: 8.2%"></a>
+            <a href="https://www.linkedin.com/company/opia-psikoloji"><img src="img/linkedin.icon.png" style="width: 4.5%"></a>
+
+    </main>
+
+    <!--        FOOTER-->
+
+    <footer id="main-footer">
+        <img src="img/logo 2.png" style="width: 10%">
+        <span id="copyright" style="font-family: Cochin;">© Opia Psikoloji Merkezi<br>Danışmanlık & Atölye </span>
+    </footer>
+
+    <script>
+        window.sr = new ScrollReveal()
+
+        sr.reveal('.opia', {
+            opacity: 0,
+            origin: "top",
+            distance: "30px"
+
+        });
+
+        sr.reveal('.hakkımızda', {
+            distance: "30px",
+            interval: 500,
+            origin: "top",
+            scale: "0.3",
+            duration: 1500
+        });
+        sr.reveal('.egitim', {
+            distance: "30px",
+            interval: 500,
+            origin: "top",
+            scale: "0.3",
+            duration: 1500
+        });
+        sr.reveal('.etik', {
+            distance: "30px",
+            interval: 500,
+            origin: "top",
+            scale: "0.3",
+            duration: 1500
+        });
+
+        sr.reveal('.kabulfoto', {
+            distance: "100px",
+            origin: "left",
+            duration: 1500
+
+        });
+
+        sr.reveal('.kabul', {
+            distance: "100px",
+            origin: "right",
+            duration: 1500
+
+        });
+
+
+        sr.reveal('.nezaman', {
+            interval: 250,
+            distance: "100px",
+            scale: "0.5",
+            origin: "top",
+            duration: 2000
+        });
+
+
+        sr.reveal('.etiket', {
+            interval: 500,
+            distance: "100px",
+            scale: "0.5",
+            origin: "top",
+            duration: 2000
+        });
+    </script>
+
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#ebeeed",
+                    "text": "#100202"
+                },
+                "button": {
+                    "background": "#5a0b18",
+                    "text": "#f0e6e6"
+                }
+            },
+            "theme": "classic",
+            "content": {
+                "message": "Web sitemizde ziyaretçi deneyimini artırmak adına, veri politikamızda belirtilen amaçlarla sınırlı olmak üzere çerezler kullanılmaktadır.",
+                "dismiss": "Anladım",
+                "link": "Detaylar için tıklayınız.",
+                "href": "çerezler.html"
+            }
+        });
+    </script>
+
+</body>
+
+</html>
